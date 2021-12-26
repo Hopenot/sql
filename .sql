@@ -41,9 +41,9 @@ select * from students where id <'130';
  21. Вывести пользователя у которых id меньше 127 или больше 188
 select * from students where id <'127' or id > '188';
  22. Вывести пользователя у которых id меньше либо равно 137
-select * from students where id <'137' or id = '137';
+select * from students where id <='137';
  23. Вывести пользователя у которых id больше либо равно 137
-select * from students where id >'137' or id = '137';
+select * from students where id >='137';
  24. Вывести пользователя у которых id больше 180 но меньше 190
 select * from students where id >'180' and id < '190';
  25. Вывести пользователя у которых id между 180 и 190
