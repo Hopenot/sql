@@ -181,7 +181,6 @@ where
 	roles.role_name like '%Senior%';
 --15. Вывести зарплаты Java разработчиков
 select
-	employee_name,
 	monthly_salary
 from
 	employees
@@ -197,7 +196,6 @@ where
 	roles.role_name like '%Java developer%';
 --16. Вывести зарплаты Python разработчиков
 select
-	employee_name,
 	monthly_salary
 from
 	employees
