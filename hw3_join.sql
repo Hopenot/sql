@@ -11,8 +11,8 @@ join salary s on s.id = es.salary_id where employee_name is null;
 select employees.employee_name, salary.monthly_salary, employees.id  from employee_salary full join employees on employee_salary.employee_id = employees.id 
 full join salary on salary.id = employee_salary.salary_id where employee_name is null and monthly_salary < 2000;
 --5. Найти всех работников кому не начислена ЗП.
- select employees.employee_name, salary.monthly_salary, employees.id  from employee_salary join employees on employee_salary.employee_id = employees.id 
-join salary on salary.id = employee_salary.salary_id where monthly_salary is null;
+ select employees.employee_name, salary.monthly_salary, employees.id  from employee_salary full join employees on employee_salary.employee_id = employees.id 
+join salary on salary.id = employee_salary.salary_id where monthly_salary is null and e.employee_name is not null;
  --6. Вывести всех работников с названиями их должности.
  select employees.employee_name, roles.role_name from employees join roles_employee on employees.id = roles_employee.employee_id
  join roles on roles.id = roles_employee.role_id ;
