@@ -4,26 +4,9 @@ employee_name varchar(50) not null);
 
 insert into employees (employee_name)
 values 	('Vadim'),('Dasha'),('Petr'),('Natasha'),('Ivan'),('Sergei'),('Janessa'),('Colin'),
-('Antonio'),
-Nathan
-Austin
-Christopher
-Jayden
-Steven
-Hill
-Ian
-Alex
-Gavin
-Ward
-Wood
-Richard
-Robert
-Jackson
-John
-Kevin
-Daniel
-Sean
-Tyler
+('Antonio'),('Nathan'),('Austin'),('Christopher'),('Jayden'),('Steven'),('Hill'),('Ian'),('Alex'),
+('Gavin'),('Ward'),('Wood'), ('Richard'),('Robert'),('Jackson'),('John'),('Kevin'),('Daniel'),
+('Sean'),('Tyler'),
 Lee
 Murphy
 Davis
