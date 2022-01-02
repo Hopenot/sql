@@ -41,7 +41,7 @@ select * from salary;
 
 create table employee_salary(
 id serial primary key,
-employee_id int not null,
+employee_id int not null unique,
 salary_id int not null);
 
 insert into employee_salary(employee_id,salary_id)
