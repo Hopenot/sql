@@ -3,7 +3,57 @@ id serial primary key,
 employee_name varchar(50) not null);
 
 insert into employees (employee_name)
-values 	('Grace Autumn Murphy'),('Amber Mia Rodriguez'),('Amelia Madeline Miller'),
+values 	('Vadim'),('Dasha'),('Petr'),('Natasha'),('Ivan'),('Sergei'),('Janessa'),('Colin'),
+('Antonio'),
+Nathan
+Austin
+Christopher
+Jayden
+Steven
+Hill
+Ian
+Alex
+Gavin
+Ward
+Wood
+Richard
+Robert
+Jackson
+John
+Kevin
+Daniel
+Sean
+Tyler
+Lee
+Murphy
+Davis
+Coper
+Wright
+Wilson
+Jones
+Adam
+Zoe
+Lily
+Griffin
+Stewart
+Irea
+Ava
+Melissa
+Jordan
+Kaitlyn
+Abigail
+Ava
+Lillian
+Faith
+Leah
+Melissa
+Molly
+Gabriellas
+Alyssa
+Makayla
+Richardson
+Kaitlyn
+('Grace Autumn Murphy'),('Amber Mia Rodriguez'),('Amelia Madeline Miller'),
 ('Jessica Melissa Watson'),('Madeline Rebecca Gonzales'),('Sarah Mary Taylor'),
 ('Victoria Rachel Perry'),('Amber Lauren Powell'),('Molly Sierra Harris'),
 ('Jennifer Paige Nelson'),('Natalie Sierra Johnson'),('Avery Molly Morris'),
