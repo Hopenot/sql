@@ -272,7 +272,7 @@ join employee_salary on
 join salary on
 	salary.id = employee_salary.salary_id
 where
-	roles.role_name = 'Junior QA';
+	roles.role_name = 'Junior Manual QA engineer';
 --21. Вывести среднюю зарплату всех Junior специалистов
  select
 	avg(monthly_salary)
