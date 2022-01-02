@@ -335,35 +335,22 @@ where
 	roles.role_name like '%QA%';
 --25. Вывести количество QA инженеров
  select
-	count(employees.employee_name)
-from
-	employees
-join roles_employee on
-	employees.id = roles_employee.employee_id
-join roles on
-	roles.id = roles_employee.role_id
-where
-	roles.role_name like '%QA%';
+	count(roles.role_name)
+from roles_employee 
+join roles on roles.id = roles_employee.role_id
+where roles.role_name like '%QA%';
 --26. Вывести количество Middle специалистов.
  select
-	count(employees.employee_name)
-from
-	employees
-join roles_employee on
-	employees.id = roles_employee.employee_id
-join roles on
-	roles.id = roles_employee.role_id
+	count(roles.role_name)
+from roles_employee 
+join roles on roles.id = roles_employee.role_id
 where
 	roles.role_name like '%Middle%';
 --27. Вывести количество разработчиков
   select
-	count(employees.employee_name)
-from
-	employees
-join roles_employee on
-	employees.id = roles_employee.employee_id
-join roles on
-	roles.id = roles_employee.role_id
+	count(roles.role_name)
+from roles_employee 
+join roles on roles.id = roles_employee.role_id
 where
 	roles.role_name like '%developer';
 --28. Вывести фонд (сумму) зарплаты разработчиков.
@@ -414,8 +401,8 @@ join employee_salary on
 join salary on
 	salary.id = employee_salary.salary_id
 where
-	monthly_salary > '1700'
-	and monthly_salary < '2300'
+	monthly_salary >= 1700
+	and monthly_salary <= 2300
 order by
 	salary asc ;
 --31. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП меньше 2300
